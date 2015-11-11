@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nitz.studio.indianrailwayinfo" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.nitz.studio.indianrailwayinfo.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BaseActivity"/>
+        <activity android:name="com.nitz.studio.indianrailwayinfo.PNRStatus"
+            android:label="PNR Status"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.nitz.studio.indianrailwayinfo.PNRStatusDisplay"
+            android:screenOrientation="portrait"
+            android:label="PNR Status">
+        </activity>
+        <activity android:name=".TrainLiveStatus"
+            android:screenOrientation="portrait"
+            android:label="Train Live Status">
+        </activity>
+        <activity android:name=".TrainRoute"
+            android:label="Train Route"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SearchTrain"
+            android:label="Search Train"
+            android:screenOrientation="portrait" />
+        <activity android:name=".FareEnquiry"
+            android:label="Fare Enquiry"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SeatAvail"
+            android:label="Seat Availability"
+            android:screenOrientation="portrait" />
+        <activity android:name=".CancelledTrain"
+            android:label="Cancelled Trains"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">IndianRailwayInfo</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="status_name">
+        <item>PNR Status</item>
+        <item>Train Live Status</item>
+        <item>Train Route</item>
+        <item>Search Trains</item>
+        <item>Fare Enquiry</item>
+        <item>Seat Availability</item>
+        <item>Cancelled Trains</item>
+    </string-array>
+
+    <string name="class_prompt">Select Class</string>
+
+    <string-array name="travel_class">
+        <item>First AC 1A</item>
+        <item>Second AC 2A</item>
+        <item>Third AC 3A</item>
+        <item>Sleeper SL</item>
+        <item>First Class FC</item>
+        <item>Chair Car CC</item>
+    </string-array>
+    <string name="title_activity_pnr_status">pnr_status</string>
+    <string name="title_activity_pnrstatus">PNR Status</string>
+
+</resources>

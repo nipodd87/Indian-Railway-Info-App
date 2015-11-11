@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/trTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tr"
+        android:maxLength="5"
+        android:singleLine="true"
+        android:ems="5"
+        android:maxEms="5"
+        android:inputType="number"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        />
+    <TextView
+        android:id="@+id/tr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Train Number"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@id/trTxt"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Status"
+        android:id="@+id/statusButton"
+        android:onClick="getTrainRoute"
+        android:layout_below="@+id/trTxt"
+        android:layout_marginTop="3dp"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/tr_nameTxt"
+        android:background="#FFBB00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text=" Name: "
+        android:layout_below="@id/statusButton"
+        android:layout_marginTop="3dp"
+        />
+    <TextView
+        android:id="@+id/tr_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tr_nameTxt"
+        android:textSize="18dp"
+        android:background="#FFBB00"
+        android:textColor="#fff"
+        android:text="Duranto Exp"
+        android:layout_below="@id/statusButton"
+        android:layout_marginTop="3dp"/>
+    <TextView
+        android:id="@+id/from_stnTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tr_nameTxt"
+        android:text=" From: "
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:background="#B3B3CC"/>
+    <TextView
+        android:id="@+id/from_stn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tr_nameTxt"
+        android:layout_toRightOf="@id/from_stnTxt"
+        android:text="Yeshvanthpur Hwh"
+        android:textSize="15dp"
+        android:background="#B3B3CC"/>
+    <TextView
+        android:id="@+id/daysTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#904800"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text=" Days: "
+        android:layout_below="@id/from_stn"/>
+    <TextView
+        android:id="@+id/dayRun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#904800"
+        android:layout_toRightOf="@id/daysTxt"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:text="MON, TUE, WED, THU, FRI"
+        android:layout_below="@id/from_stn"/>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E0E0EB"
+        android:id="@+id/trainRoutList"
+        android:layout_below="@+id/daysTxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

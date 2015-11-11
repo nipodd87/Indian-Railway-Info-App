@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/item_station"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Yeshwanthpur JN (YPR)"
+        />
+    <TextView
+        android:id="@+id/item_status"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@id/item_station"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Not Reached"/>
+    <TextView
+        android:id="@+id/item_schedule1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="3dp"
+        android:layout_below="@id/item_station"
+        android:text="Sch:"
+        />
+    <TextView
+        android:id="@+id/item_schedule"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:textSize="15dp"
+        android:layout_toRightOf="@id/item_schedule1"
+        android:layout_below="@id/item_station"
+        android:text="12:00 PM"
+        />
+    <TextView
+        android:id="@+id/item_actual1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_station"
+        android:layout_toRightOf="@id/item_schedule"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:text="Actual:"/>
+    <TextView
+        android:id="@+id/item_actual"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_below="@id/item_station"
+        android:layout_toRightOf="@id/item_actual1"
+        android:textSize="15dp"
+        android:text="02:00 PM"/>
+</RelativeLayout>

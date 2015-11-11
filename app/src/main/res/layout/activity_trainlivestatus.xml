@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/tneditTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tnTxt"
+        android:singleLine="true"
+        android:maxLength="5"
+        android:ems="5"
+        android:maxEms="5"
+        android:inputType="number"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        />
+
+    <TextView
+        android:id="@+id/tnTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Train Number"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@id/tneditTxt"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        />
+
+    <Button
+        android:id="@+id/yesterdayBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tnTxt"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        android:onClick="getLiveStatus"
+        />
+    <Button
+        android:id="@+id/todayBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tnTxt"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        android:onClick="getLiveStatus"
+        />
+    <Button
+        android:id="@+id/tomorrowBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tnTxt"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:onClick="getLiveStatus"
+        />
+    <TextView
+        android:id="@+id/trainLiveStatusTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:textSize="15dp"
+        android:background="#FFBB00"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:textColor="#FFF"
+        android:layout_below="@id/todayBtn"
+        android:text="Train Live Status"/>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statusListView"
+        android:layout_below="@+id/trainLiveStatusTxt"
+        android:background="#E0E0EB"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+         />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

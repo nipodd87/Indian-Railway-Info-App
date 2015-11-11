@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    
+    <TextView
+        android:id="@+id/classCodeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Class: "
+        android:textSize="22dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/classCode"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/classCodeTxt"
+        android:text="1A"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/className"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/classCode"
+        android:layout_marginLeft="10dp"
+        android:text="First Class"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/farePrice"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="INR 6065"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        />
+</RelativeLayout>
